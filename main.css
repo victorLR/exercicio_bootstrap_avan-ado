@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to left,rgba(255, 255, 255, 0.504),rgba(0, 0, 0, 0.783),rgba(255, 255, 255, 0.529));
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container h1{
+    color: #cac7c7
+}
+
+#cabecalho{
+margin-top: 15px;
+}
+
+#Movies{
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #0d6efd;
+}
+
+#Animes{
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #0d6efd;
+}
+
+.carousel-inner{
+    height: 70vh;
+    width: 100vw;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: start;
+    width: 100%;
+    z-index: 1;
+}
+
+.carousel-caption h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.card {
+    height: 100%;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.nt{
+    margin-top: 20px;
+}
+
+
+.row .col {
+    margin-bottom: 20px; 
+}
+
+
+@media (max-width: 576px) {
+    .row-cols-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: auto;
+    }
+
+
+    #Movies {
+        margin-left: 20px;
+        margin-top: 10px; 
+        color: #0d6efd;
+    }
+
+    .videoamv {
+        margin-top: 10px;
+    }
+
+    .carousel {
+        display: none;
+    }
+    .card {
+        height: auto;
+        width: 100%; 
+        min-width: 300px; 
+        margin-left: 5px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .row-cols-md-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .videoamv {
+        margin-top: 50px;
+    }
+
+    #cabecalho {
+        margin-top: 20px;
+    }
+
+    #Anime .col {
+        flex: 0 0 calc(50%);
+    }
+
+    .card img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .row-cols-lg-3 {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .videoamv{
+        display: none;
+    }
+
+#Movies{
+        display: none;
+    }
+
+}

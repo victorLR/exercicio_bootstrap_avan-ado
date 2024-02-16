@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+    <title>AnimesOrion</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar">
+            <div class="container">
+                <h1>AnimesOrion</h1>
+                <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Movies">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Animes">Animes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mangás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div id="carousel-go" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active" >
+                    <img src="./img/1305785.jpg">
+                    <div class="carousel-caption">
+                        <h3>Animes</h3>
+                        <p>"Em cada cena, uma jornada. Em cada personagem, uma emoção.</br>Animes, onde a magia encontra a realidade, e as histórias se tornam eternas."</p>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/jinx.jpg">
+                    <div class="carousel-caption">
+                        <h3>Movies</h3>
+                        <p>"Da tela para a alma, cada frame é uma obra-prima.</br> Filmes, experiências cinematográficas que transcendem o tempo e a imaginação."</p>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/1320348.jpeg">
+                    <div class="carousel-caption">
+                        <h3>Mangás</h3>
+                        <p>"Palavras que criam mundos, desenhos que contam histórias.</br> Mangás, onde a magia das palavras encontra a arte visual, e as páginas ganham vida."</p>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/naruto.png">
+                    <div class="carousel-caption">
+                        <h3>Pages</h3>
+                        <p>Nas linhas e traços, descubra mundos de fantasia, mistério e aventura.</br> Pages, onde cada virar de página é uma nova descoberta, e cada história é uma jornada única."</p>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-go" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-go" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-target="#carousel-go" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-go" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-go" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-go" data-bs-slide-to="3"></button>
+            </div>
+        </div> 
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <h2 id="Movies">Movies</h2>
+        <div class="videoamv">
+            <video width="100%"  autoplay muted controls src="./video/ae517f6d-cc05-4b05-aa18-47af6c421b0b.mp4"></video>
+        </div>
+    </div>
+
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <h2 id="Animes">Animes</h2>
+        </div>
+        <div id="Anime" class="container nt">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Kimetsu no Yaiba
+                        </div>
+                        <img src="./img/365096.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Kimetsu no Yaiba</h4>
+                            <p class="card-text">
+                                "Kimetsu no Yaiba" segue Tanjiro Kamado, um jovem em busca de vingança após sua família ser massacrada por demônios, e sua irmã Nezuko ser transformada em um deles. Ele se torna um caçador de demônios, enfrentando desafios intensos para curar Nezuko e proteger a humanidade.
+                            </p>
+                            <a target="_blank" href="https://www.crunchyroll.com/pt-br/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba" class="btn btn-primary">Ir ao Anime</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Solo Leveling
+                        </div>
+                        <img src="./img/thumb-800-642112.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Solo Leveling</h4>
+                            <p class="card-text">
+                                "Solo Leveling" segue Sung Jin-Woo, o caçador mais fraco da Classe E, que se torna um verdadeiro protagonista após ser deixado em uma masmorra quase mortal. Dotado de habilidades únicas, ele embarca em uma jornada para se tornar o caçador mais poderoso, enfrentando desafios sobrenaturais.
+                            </p>
+                            <a target="_blank" href="https://www.crunchyroll.com/pt-br/series/GDKHZEJ0K/solo-leveling" class="btn btn-primary">Ir ao Anime</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Boku no Hero
+                        </div>
+                        <img src="./img/736903.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Boku no Hero</h4>
+                            <p class="card-text">
+                                "Boku no Hero Academia" se desenrola em um mundo onde quase todos têm superpoderes, conhecidos como "quirks". A história acompanha Izuku Midoriya, um jovem sem poderes que sonha em se tornar um herói. Após herdar os poderes do lendário herói All Might, conseguindo entrar na academy.
+                            </p>
+                            <a target="_blank" href="https://www.crunchyroll.com/pt-br/series/G6NQ5DWZ6/my-hero-academia" class="btn btn-primary">Ir ao Anime</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+
+
+
+    <script>
+        var meuVideo = document.querySelector('.videoamv video');
+
+        meuVideo.volume = 0.1;
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
